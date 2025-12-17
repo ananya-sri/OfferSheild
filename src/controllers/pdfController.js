@@ -7,7 +7,7 @@ const require = createRequire(import.meta.url);
 const pdfParseModule = require("pdf-parse");
 const { PDFParse } = pdfParseModule;
 
-// Wrapper function to match the old pdf-parse API
+// Wrapper function 
 const pdfParse = async (buffer, options = {}) => {
   const parser = new PDFParse({ data: buffer, ...options });
   try {
