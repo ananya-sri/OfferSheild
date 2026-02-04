@@ -1,6 +1,6 @@
 import app from "./app.js";
 import dotenv from "dotenv";
-import { connectDB } from "./src/config/db.js";
+import { connectDB } from "./src/Config/Db.js";
 import reportRoutes from "./src/routes/reportRoutes.js";
 import authRoutes from "./src/routes/authRoutes.js";
 import reqAuth from "./src/middleware/auth.js";
