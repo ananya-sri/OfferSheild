@@ -15,6 +15,7 @@ app.use("/api/whois", whoisRoutes);
 app.get("/api/secure-data", reqAuth, (req, res) => {
   res.json({ message: "You are authorized" });
 });
+console.log("Groq Key Loaded:", process.env.GROQ_API_KEY ? "YES" : "NO");
 
 
 const PORT = process.env.PORT || 5000;
